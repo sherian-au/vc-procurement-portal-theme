@@ -1,0 +1,258 @@
+{
+    "settings": {
+        "name": "Settings",
+        "static": true,
+        "icon": "settings",
+        "settings": [
+            {
+                "id": "title",
+                "label": "Title",
+                "type": "string"
+            },
+            {
+                "id": "published",
+                "label": "Published",
+                "type": "boolean"
+            },
+            {
+                "id": "schema",
+                "label": "Metadata",
+                "type": "string"
+            },
+            {
+                "id": "permalink",
+                "label": "Permalink",
+                "type": "string"
+            },
+            {
+                "id": "layout",
+                "label": "Layout name",
+                "type": "select",
+                "default": "theme",
+                "options": [
+                    {
+                        "label": "Theme",
+                        "value": "theme"
+                    }
+                ]
+            }
+        ]
+    },
+    "header": {
+        "name": "Header",
+        "static": "-top",
+        "icon": "header",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Header"
+            },
+            {
+                "id": "header_text_color",
+                "label": "Text color",
+                "type": "color"
+            }
+        ]
+    },
+    "footer": {
+        "name": "Footer",
+        "static": "-bottom",
+        "icon": "footer",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Footer"
+            },
+            {
+                "id": "header_text_color",
+                "label": "Text color",
+                "type": "color"
+            }
+        ]
+    },
+    "text": {
+        "name": "Simple text",
+        "icon": "text",
+        "displayField": "name",
+        "settings": [
+            {
+                "id": "name",
+                "label": "Block name",
+                "type": "string",
+                "default": "Text",
+                "tab": "Settings"
+            },
+            {
+                "id": "title",
+                "label": "Title",
+                "type": "string",
+                "default": "Block title",
+                "autofocus": true
+            },
+            {
+                "id": "content",
+                "label": "Content",
+                "type": "text",
+                "default": "Text block content"
+            }
+        ]
+    },
+    "two-columns-text": {
+        "name": "Two columns text",
+        "icon": "text",
+        "displayField": "name",
+        "settings": [
+            {
+                "id": "name",
+                "label": "Block name",
+                "type": "string",
+                "default": "Text",
+                "tab": "Settings"
+            },
+            {
+                "id": "title",
+                "label": "Title",
+                "type": "string",
+                "default": "Block title",
+                "autofocus": true
+            },
+            {
+                "id": "headerType",
+                "label": "Header type",
+                "default": "like-h2",
+                "tab": "Settings",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "h1",
+                        "label": "H1"
+                    },
+                    {
+                        "value": "h2",
+                        "label": "H2"
+                    },
+                    {
+                        "value": "h3",
+                        "label": "H3"
+                    },
+                    {
+                        "value": "like-h1",
+                        "label": "Like H1"
+                    },
+                    {
+                        "value": "like-h2",
+                        "label": "Like H2"
+                    },
+                    {
+                        "value": "like-h3",
+                        "label": "Like H3"
+                    }
+                ]
+            },
+            {
+                "id": "titleAlignment",
+                "label": "Align title",
+                "default": null,
+                "tab": "Settings",
+                "type": "select",
+                "options": [
+                    {
+                        "value": "text-center",
+                        "label": "Center"
+                    },
+                    {
+                        "value": null,
+                        "label": "Left"
+                    }
+                ]
+            },
+            {
+                "id": "titleStyle",
+                "label": "Title style",
+                "type": "select",
+                "default": null,
+                "options": [
+                    {
+                        "value": null,
+                        "label": "Standard"
+                    },
+                    {
+                        "value": "bg-light",
+                        "label": "Gray"
+                    }
+                ],
+                "tab": "Settings"
+            },
+            {
+                "id": "style",
+                "label": "Block style",
+                "type": "select",
+                "default": "light",
+                "options": [
+                    {
+                        "value": "light",
+                        "label": "Light"
+                    },
+                    {
+                        "value": "dark",
+                        "label": "Dark"
+                    }
+                ],
+                "tab": "Settings"
+            },
+            {
+                "id": "contentBefore",
+                "label": "Content",
+                "type": "text",
+                "default": "Intro text for the block"
+            },
+            {
+                "id": "items",
+                "label": "Items",
+                "type": "list",
+                "addText": "Add item",
+                "removeText": "Remove item",
+                "displayField": "title",
+                "element": [
+                    {
+                        "id": "text",
+                        "label": "Text",
+                        "type": "text"
+                    }
+                ],
+                "default": [
+                    {
+                        "text": "Left column content"
+                    },
+                    {
+                        "text": "Right column content"
+                    },
+                    {
+                        "text": "Last item content it it exists"
+                    }
+                ]
+            },
+            {
+                "id": "noTop",
+                "label": "Remove top margin",
+                "type": "checkbox",
+                "tab": "Settings",
+                "default": false
+            },
+            {
+                "id": "noBottom",
+                "label": "Remove bottom margin",
+                "type": "checkbox",
+                "tab": "Settings",
+                "default": false
+            },
+            {
+                "id": "noPad",
+                "label": "Remove paddings",
+                "type": "checkbox",
+                "tab": "Settings",
+                "default": false
+            }
+        ]
+    }
+}

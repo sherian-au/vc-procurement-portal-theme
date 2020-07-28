@@ -31,6 +31,9 @@ speed-measure-plugin.json
 !.vscode/extensions.json
 .history/*
 
+# Visual Studio 2015/2017 cache/options directory
+.vs/*
+
 # misc
 /.sass-cache
 /connect.lock
@@ -47,4 +50,6 @@ Thumbs.db
 
  # Custom
  
+/assets/static/bundle/dist
 assets/static/bundle/
+/config/draft
